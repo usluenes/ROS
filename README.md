@@ -4,11 +4,17 @@ ROS Packages
 ## simplepublisher
 
 This package contains:
+
 publisher.py     : Simple Publisher /publishedTopic (string message)
+
 subscriber.py    : Simple Subscriber /publishedTopic (string message) 
+
 stdpublisher.py  : /numTopic Publisher Node: Custom message (/msg/Num) 
+
 stdsubscriber.py : /numTopic Subscriber Node:Custom message (/msg/Num) 
+
 2publisher.py    : 2 topic publisher node
+
 std2subscriber.py: 2 topic subscriber node
 
 ## senspublisher
@@ -26,7 +32,7 @@ counter_with_delay_as.py : Counter with 1sec delay action server
 
 counter_with_delay_ac.py : Counter with 1sec delay action client
 
-## week1_assignment1.py : See [ROS_mooc_week_1_assignment_1.pdf] (https://github.com/usluenes/ROS/blob/master/senspublisher/ROS_mooc_week_1_assignment_1.pdf)
+## week1_assignment1.py : See [ROS_mooc_week_1_assignment_1.pdf](https://github.com/usluenes/ROS/blob/master/senspublisher/ROS_mooc_week_1_assignment_1.pdf) 
 The main task of this assignment is to publish a new topic that contains the height of the detected boxes based on the setup
 
 ### Part 1
