@@ -111,7 +111,7 @@ Solution:
 The goal of this part of the assignment is to learn how to use arguments and parameters to launchfiles. 
 
 
-See the output of the assignment [Screenshot](https://github.com/usluenes/ROS/blob/master/senspublisher/Screenshot%20from%202020-02-08%2017-40-48.png)
+See the output of the assignment [Screenshot](https://github.com/usluenes/ROS/blob/master/senspublisher/Output2.png)
 
 
 
