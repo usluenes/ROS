@@ -6,30 +6,20 @@ ROS Packages
 This package contains:
 
 publisher.py     : Simple Publisher /publishedTopic (string message)
-
 subscriber.py    : Simple Subscriber /publishedTopic (string message) 
-
 stdpublisher.py  : /numTopic Publisher Node: Custom message (/msg/Num) 
-
 stdsubscriber.py : /numTopic Subscriber Node:Custom message (/msg/Num) 
-
 2publisher.py    : 2 topic publisher node
-
 std2subscriber.py: 2 topic subscriber node
 
 ## senspublisher
 This package contains: 
 
 sensorInfoPublisher.py   : SensorInformation.msg publisher
-
 sensorInfoSubscriber.py  : SensorInformation.msg subscriber
-
 meters_to_feet_server.py : Meter to feet converter service server
-
 meters_to_feet_client.py : Meter to feet converter service client
-
 counter_with_delay_as.py : Counter with 1sec delay action server
-
 counter_with_delay_ac.py : Counter with 1sec delay action client
 
 ## week1_assignment1.py : See [ROS_mooc_week_1_assignment_1.pdf](https://github.com/usluenes/ROS/blob/master/senspublisher/ROS_mooc_week_1_assignment_1.pdf) 
@@ -77,7 +67,7 @@ is only when the detected box height is valid.
 3. Publish the box height information on the /box_height_info topic ONLY when the detected
 box has a valid height.
 
-## week1_assignment2.py : See ROS_mooc_week_1_assignment_2.pdf
+## week1_assignment2.py : See [ROS_mooc_week_1_assignment_2.pdf](https://github.com/usluenes/ROS/blob/master/senspublisher/ROS_mooc_week_1_assignment_2.pdf) 
 The main task of this assignment is  call a ROS service via a service client. See that the same service can also be called via the command line, provided that the service server is running. This assignment consists of two parts.
 
 ### Part 1
