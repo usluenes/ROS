@@ -34,6 +34,7 @@ counter_with_delay_ac.py : Counter with 1sec delay action client
 
 ## week1_assignment1.py : 
 See [ROS_mooc_week_1_assignment_1.pdf](https://github.com/usluenes/ROS/blob/master/senspublisher/ROS_mooc_week_1_assignment_1.pdf) 
+
 The main task of this assignment is to publish a new topic that contains the height of the detected boxes based on the setup
 
 ### Part 1
@@ -74,6 +75,7 @@ box has a valid height.
 
 ## week1_assignment2.py : 
 See [ROS_mooc_week_1_assignment_2.pdf](https://github.com/usluenes/ROS/blob/master/senspublisher/ROS_mooc_week_1_assignment_2.pdf) 
+
 The main task of this assignment is  call a ROS service via a service client. See that the same service can also be called via the command line, provided that the service server is running. This assignment consists of two parts.
 
 ### Part 1
