@@ -6,20 +6,30 @@ ROS Packages
 This package contains:
 
 publisher.py     : Simple Publisher /publishedTopic (string message)
+
 subscriber.py    : Simple Subscriber /publishedTopic (string message) 
+
 stdpublisher.py  : /numTopic Publisher Node: Custom message (/msg/Num) 
+
 stdsubscriber.py : /numTopic Subscriber Node:Custom message (/msg/Num) 
+
 2publisher.py    : 2 topic publisher node
+
 std2subscriber.py: 2 topic subscriber node
 
 ## senspublisher
 This package contains: 
 
 sensorInfoPublisher.py   : SensorInformation.msg publisher
+
 sensorInfoSubscriber.py  : SensorInformation.msg subscriber
+
 meters_to_feet_server.py : Meter to feet converter service server
+
 meters_to_feet_client.py : Meter to feet converter service client
+
 counter_with_delay_as.py : Counter with 1sec delay action server
+
 counter_with_delay_ac.py : Counter with 1sec delay action client
 
 ## week1_assignment1.py : See [ROS_mooc_week_1_assignment_1.pdf](https://github.com/usluenes/ROS/blob/master/senspublisher/ROS_mooc_week_1_assignment_1.pdf) 
@@ -79,7 +89,7 @@ Solution:
 
 
 
-
+See the output of the assignment [Screenshot](https://github.com/usluenes/ROS/blob/master/senspublisher/Screenshot%20from%202020-02-08%2017-40-48.png)
 
 
 
