@@ -26,9 +26,7 @@ counter_with_delay_ac.py : Counter with 1sec delay action client
 The main task of this assignment is to publish a new topic that contains the height of the detected boxes based on the setup
 
 ### Part 1
-Problem Defition: 
-
-When there is no box, the sensor publishes the maximum range value which is the distance to the
+Problem Defition: When there is no box, the sensor publishes the maximum range value which is the distance to the
 conveyor belt and it reports the distance to the top surface of the box when it does detect one.
 However, there is also an indication in the data sheet that, although the advertised maximum range is
 2.0m, the usable range is only 1.9m and any value above that is sensor noise, which means, there can
@@ -40,9 +38,7 @@ Solution:
 3. Filter out the false positives from the sensor due to sensor noise.
 
 ### Part 2
-Problem Definition: 
-
-you will create a new message type called
+Problem Definition: Create a new message type called
 BoxHeightInformation.msg, which contains a place holder called “box_height” which is a floating
 point number. This way you can share detected box height information with other ROS nodes in your
 application.
@@ -54,9 +50,7 @@ SensorInformation.msg file is located.
 3. Generate the new message type
 
 ### Part 3
-Problem Definition: 
-
-Now, you are ready to publish a new ROS topic “/box_height_info” ONLY when a valid box is
+Problem Definition: Now, you are ready to publish a new ROS topic “/box_height_info” ONLY when a valid box is
 detected. You are not supposed to publish anything when the detected box height was invalidated due
 to sensor noise.
 
@@ -71,16 +65,13 @@ box has a valid height.
 The main task of this assignment is  call a ROS service via a service client. See that the same service can also be called via the command line, provided that the service server is running. This assignment consists of two parts.
 
 ### Part 1
-Problem Defition: 
-
-In Assignment1, you created a publisher for a new topic to publish box height information.
+Problem Defition: In Assignment1, you created a publisher for a new topic to publish box height information.
 
 Solution:
 1.  Create a subscriber to this new topic, i.e, ”/box_height_info”
 
 ### Part 2
-Problem Defition: 
-Now, the box height information in ”/box_height_info” topic is in ”m” (metres). And this information has to be converted to feet.  So, in the subscriber callback for this topic, you will call the ROS serviceto convert the distance information from this topic from metres to feet, using the ”metres_to_feet” ROS service.
+Problem Defition: Now, the box height information in ”/box_height_info” topic is in ”m” (metres). And this information has to be converted to feet.  So, in the subscriber callback for this topic, you will call the ROS serviceto convert the distance information from this topic from metres to feet, using the ”metres_to_feet” ROS service.
 
 Solution: 
 1.  Add a call to the ”metres_to_feet” service in the subscriber callback.
