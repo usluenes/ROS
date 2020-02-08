@@ -15,13 +15,18 @@ std2subscriber.py: 2 topic subscriber node
 This package contains: 
 
 sensorInfoPublisher.py   : SensorInformation.msg publisher
+
 sensorInfoSubscriber.py  : SensorInformation.msg subscriber
+
 meters_to_feet_server.py : Meter to feet converter service server
+
 meters_to_feet_client.py : Meter to feet converter service client
+
 counter_with_delay_as.py : Counter with 1sec delay action server
+
 counter_with_delay_ac.py : Counter with 1sec delay action client
 
-## week1_assignment1.py : See ROS_mooc_week_1_assignment_1.pdf
+## week1_assignment1.py : See [ROS_mooc_week_1_assignment_1.pdf] (https://github.com/usluenes/ROS/blob/master/senspublisher/ROS_mooc_week_1_assignment_1.pdf)
 The main task of this assignment is to publish a new topic that contains the height of the detected boxes based on the setup
 
 ### Part 1
