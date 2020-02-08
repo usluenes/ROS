@@ -2,6 +2,7 @@
 ROS Packages
 
 ## simplepublisher
+
 This package contains:
 publisher.py     : Simple Publisher /publishedTopic (string message)
 subscriber.py    : Simple Subscriber /publishedTopic (string message) 
@@ -12,6 +13,7 @@ std2subscriber.py: 2 topic subscriber node
 
 ## senspublisher
 This package contains: 
+
 sensorInfoPublisher.py   : SensorInformation.msg publisher
 sensorInfoSubscriber.py  : SensorInformation.msg subscriber
 meters_to_feet_server.py : Meter to feet converter service server
