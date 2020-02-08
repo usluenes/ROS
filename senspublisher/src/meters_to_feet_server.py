@@ -2,23 +2,23 @@
 
 import rospy
 import numpy as np
-from senspublisher.srv import ConvertMetresToFeet, ConvertMetresToFeetRequest, ConvertMetresToFeetResponse
+from senspublisher.srv import ConvertMetersToFeet, ConvertMetersToFeetRequest, ConvertMetersToFeetResponse
 
-_ConvFactorMetres2Feet = 3.28
+_ConvFactorMeters2Feet = 3.28
 
 # Service callback function.
 def process_service_request(req):
 
     # Instantiate the response message object
-    res = ConvertMetresToFeetResponse()
+    res = ConvertMetersToFeetResponse()
 
     # Perform sanity check. Allow only positive real numbers
     # Compose the response message accordingly
-    if(req.distance_metres < 0):
+    if(req.distance_meters < 0):
         res.success = False
         res.distance_feet = -np.Inf # Default error value
     else:
-        res.distance_feet = _ConvFactorMetres2Feet * req.distance_metres
+        res.distance_feet = _ConvFactorMeters2Feet * req.distance_meters
         res.success = True
     # Service blocks execution (10sec delay)
     for test_idx in range(0,1):
@@ -26,14 +26,14 @@ def process_service_request(req):
 
     return res
 
-def metres_to_feet_server():
-    rospy.init_node('metres_to_feet_server', anonymous = False)
+def meters_to_feet_server():
+    rospy.init_node('meters_to_feet_server', anonymous = False)
 
-    service = rospy.Service('metres_to_feet', ConvertMetresToFeet,
+    service = rospy.Service('meters_to_feet', ConvertMetersToFeet,
     process_service_request)
 
-    rospy.loginfo('Convert metres to  feet service is available now.')
+    rospy.loginfo('Convert meters to  feet service is available now.')
     rospy.spin()
 
 if __name__ == "__main__":
-    metres_to_feet_server()
+    meters_to_feet_server()

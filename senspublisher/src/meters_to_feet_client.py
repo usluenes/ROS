@@ -2,18 +2,18 @@
 
 import sys
 import rospy
-from senspublisher.srv import ConvertMetresToFeet, ConvertMetresToFeetRequest, ConvertMetresToFeetResponse
+from senspublisher.srv import ConvertMetersToFeet, ConvertMetersToFeetRequest, ConvertMetersToFeetResponse
 
-def metres_to_feet_client(x):
+def meters_to_feet_client(x):
     # First wait for the service to become available.
     rospy.loginfo("Waiting for service...")
-    rospy.wait_for_service('metres_to_feet')
+    rospy.wait_for_service('meters_to_feet')
     try:
         # Create a service proxy.
-        metres_to_feet = rospy.ServiceProxy('metres_to_feet', ConvertMetresToFeet)
+        meters_to_feet = rospy.ServiceProxy('meters_to_feet', ConvertMetersToFeet)
 
         # Call the service here.
-        service_response = metres_to_feet(x)
+        service_response = meters_to_feet(x)
 
         print("I only got here AFTER the service call was completed!")
 
@@ -26,19 +26,19 @@ def metres_to_feet_client(x):
 if __name__ == "__main__":
 
     # Initialize the client ROS node.
-    rospy.init_node("metres_to_feet_client", anonymous = False)
+    rospy.init_node("meters_to_feet_client", anonymous = False)
 
     # The distance to be converted to feet.
-    dist_metres = 0.25
+    dist_meters = 0.25
 
-    rospy.loginfo("Requesting conversion of %4.2f m to feet"%(dist_metres))
+    rospy.loginfo("Requesting conversion of %4.2f m to feet"%(dist_meters))
 
     # Call the service client function.
-    service_response = metres_to_feet_client(dist_metres)
+    service_response = meters_to_feet_client(dist_meters)
 
     # Process the service response and display log messages accordingly.
     if(not service_response.success):
-        rospy.logerr("Conversion unsuccessful! Requested distance in metres should be a positive real number.")
+        rospy.logerr("Conversion unsuccessful! Requested distance in meters should be a positive real number.")
     else:
-        rospy.loginfo("%4.2f(m) = %4.2f feet"%(dist_metres, service_response.distance_feet))
+        rospy.loginfo("%4.2f(m) = %4.2f feet"%(dist_meters, service_response.distance_feet))
         rospy.loginfo("Conversion successful!")

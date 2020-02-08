@@ -92,8 +92,28 @@ Solution:
 2.  Use arospy.loginfolog message to display the converted information in feet with a meaningfullog message
 
 
+See the output of the assignment [Screenshot](https://github.com/usluenes/ROS/blob/master/senspublisher/Screenshot%20from%202020-02-08%2017-40-48.png)
+
+
+
+## week1 assignment3 Launch files : 
+See [ROS_mooc_week_1_assignment_3.pdf](https://github.com/usluenes/ROS/blob/master/senspublisher/ROS_mooc_week_1_assignment_3.pdf) 
+
+
+### Part 1
+Goal of this partof the assignment is to create a launch file to be able to run the two previous assignments together to obtain the same result as you obtained at the end of assignment2 launching only one file.
+
+Solution: 
+1.  Create launch files with the correct names of the nodes and files to start the ROS nodes
+
+
+### Part 2
+The goal of this part of the assignment is to learn how to use arguments and parameters to launchfiles. 
+
 
 See the output of the assignment [Screenshot](https://github.com/usluenes/ROS/blob/master/senspublisher/Screenshot%20from%202020-02-08%2017-40-48.png)
+
+
 
 
 
